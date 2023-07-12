@@ -74,6 +74,7 @@ a {
 .nav a {
     color: #232323;
     transition: all 0.3s ease-in-out;
+    font-size: 14px;
 }
 
 .nav a:hover {
@@ -437,6 +438,7 @@ a {
     position: relative;
     margin-top: 136px;
 }
+
 .subscription img{
     width: 100%;
     height: 100%;
@@ -558,4 +560,368 @@ a {
     font-weight: 400;
     font-size: 14px;
     color: #232323;
+}
+
+/* 1024px */
+@media ( max-width: 1024px ) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    
+        padding: 50px 50px 0 50px;
+    }
+
+    .banner-content h1 {
+        font-weight: 600;
+        font-size: 40px;
+        color: #232323;
+    }
+
+    .banner-content h3 {
+        font-weight: 400;
+        font-size: 16px;
+        color: #f9f9f9;
+    }
+
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    
+        gap: 40px;
+    
+        position: absolute;
+        top: 52px;
+        bottom: 0;
+        left: 263px;
+        right: 264px;
+    
+        text-align: center;
+    }
+
+    .catalog {
+        padding: 0 50px;
+    }
+
+    .carts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 0 50px;
+    }
+
+    .popular-catalog {
+        position: relative;
+
+        padding: 0 50px;
+    }
+
+    .popular-carts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 0 50px;
+    }
+
+    .popular-carts .cart:last-child {
+        display: none;
+    }
+
+    .popular-catalog .fa-chevron-down {
+        position: absolute;
+        top: 60%;
+        bottom: 0;
+        left: auto;
+        right: 100px;
+    
+        width: fit-content;
+        height: fit-content;
+    
+        color: #232323;
+        font-size: 30px;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    .partners {
+        position: relative;
+
+        padding: 0 50px;
+    }
+
+    .partners-img img:nth-last-child(1) {
+        width: 96px;
+        height: 96px;
+        display: none;
+    }
+
+    .partners-img img:nth-last-child(2) {
+        width: 96px;
+        height: 96px;
+        display: none;
+    }
+
+    .partners .fa-chevron-down {
+        position: absolute;
+        top: 72%;
+        bottom: 0;
+        left: auto;
+        right: 10px;
+    
+        width: fit-content;
+        height: fit-content;
+    
+        color: #232323;
+        font-size: 30px;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    .subscription {
+        padding: 50px 0 0 0;
+    }
+
+    .subscription h2{
+        font-weight: 600;
+        font-size: 24px;
+        color: #f9f9f9;
+    
+        margin-bottom: 80px;
+    }
+
+    .subscription-email {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    
+        gap: 60px;
+
+        padding: 0 70px;
+    }
+
+    .subscription-email input {
+        outline: none;
+        border: none;
+        padding: 19px 0 19px 21px;
+        border-radius: 4px;
+    
+        width: 320px;
+    
+        font-weight: 400;
+        font-size: 18px;
+        transition: all 0.3s ease-in-out;
+    
+        background-color: #f9f9f9d5;
+    }
+    
+    .subscription-email button {
+        max-width: 420px;
+    
+        outline: none;
+        border: none;
+    
+        padding: 19px 120px;
+        border-radius: 4px;
+    
+        font-weight: 700;
+        font-size: 18px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    
+        background-color: #f9f9f9;
+    }
+
+    .subscription-error {
+        width: fit-content;
+        margin-left: auto;
+    
+        font-weight: 400;
+        font-size: 12px;
+    
+        color: #C6C6C6;
+    
+        padding: 10px 100px 0 0;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    
+        gap: 50px;
+    
+        margin-top: 136px;
+    
+        background-color: #edecec;
+    
+        padding: 100px 90px;
+    }
+}
+
+@media ( max-width: 768px ) {
+
+    .nav a {
+        font-size: 14px;
+    }
+
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    
+        gap: 30px;
+    
+        position: absolute;
+        top: 52px;
+        bottom: 0;
+        left: 163px;
+        right: 164px;
+    
+        text-align: center;
+    }
+
+    .banner-content h1 {
+        font-size: 30px;
+    }
+
+    .banner-content h3 {
+        font-size: 14px;
+        gap: 20px;
+    }
+
+    .banner-content button {
+
+        padding: 14px 56px;
+       
+        font-size: 14px;
+        
+    }
+
+    .catalog h2 {
+        font-size: 32px;
+    }
+
+    .catalog {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .popular-carts .cart:first-child {
+        display: none;
+    }
+
+    .partners-img img:nth-last-child(3) {
+        display: none;
+    }
+
+    .banner-content .fa-chevron-down {
+        color: #f9f9f9;
+        font-size: 24px;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    .subscription {
+        position: relative;
+        margin-top: 136px;
+    }
+
+    .subscription img{
+        width: 100%;
+        height: 300px;
+    }
+
+    .subscription h2{
+        font-weight: 600;
+        font-size: 24px;
+        color: #f9f9f9;
+    
+        margin: 12px 0 24px 0;
+    }
+
+    .subscription-email {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    
+        gap: 24px;
+    }
+
+    .subscription-email input {
+        outline: none;
+        border: none;
+        padding: 10px 0 10px 21px;
+        border-radius: 4px;
+    
+        width: 220px;
+    
+        font-weight: 400;
+        font-size: 14px;
+        transition: all 0.3s ease-in-out;
+    
+        background-color: #f9f9f9d5;
+    }
+
+    .subscription-email button {
+        max-width: 220px;
+    
+        outline: none;
+        border: none;
+    
+        padding: 10px 75px;
+        border-radius: 4px;
+    
+        font-weight: 700;
+        font-size: 14px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    
+        background-color: #f9f9f9;
+    }
+
+    .subscription-error {
+        width: fit-content;
+        font-weight: 400;
+        font-size: 12px;
+        text-align: center;
+        padding-left: 1px;
+    
+        color: #C6C6C6;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    
+        gap: 50px;
+    
+        margin-top: 136px;
+    
+        background-color: #edecec;
+    
+        padding: 100px 90px;
+    }
+
 }
